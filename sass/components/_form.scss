@@ -209,6 +209,10 @@
   position: absolute;
   left: 0;
   bottom: calc(100% + 4px);
+  font-size: 12px;
+  color: $secondary-text-color;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
 }
 
 .form-list__input{
@@ -248,6 +252,10 @@
 .textarea__lable{
   display: block;
   margin-bottom: 4px;
+  font-size: 12px;
+  color: $secondary-text-color;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
 }
 
 .textarea__comments{
@@ -289,11 +297,15 @@
   display: inline-block;
   width: 16px;
   height: 15px;
-  margin-left: 14px;
+  
   margin-right: 8px;
   border: 2px solid $primery-text-color;
   border-radius: 2px;
   cursor: pointer;
+
+  @media screen and(min-width:1200px){
+        margin-left: 14px;
+      }
 
 
   .checkbox__input:checked  + &{
@@ -310,8 +322,8 @@
 }
 
 .checkbox__label{
+  color: $secondary-text-color;
   
-  margin-right: 8px;
 
   @media screen  and(max-width:1199px){
     font-size: 12px;
@@ -325,6 +337,7 @@
 
 .checkbox__link{
   color: $accent-color;
+  margin-left: 3px;
   
 
   @media screen  and(max-width:1199px){
