@@ -276,6 +276,12 @@ body.modal-open {
   border-radius: 2px;
 }
 
+@media screen and (max-width: 767px) {
+  .site-nav__link--current::after {
+    display: none;
+  }
+}
+
 .site-nav__link {
   position: relative;
   display: inline-block;
@@ -916,21 +922,18 @@ body.modal-open {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .address-container {
+    text-align: center;
+    margin-left: 61px;
     margin-bottom: 60px;
   }
 }
 
 .address {
+  padding: 0 7px;
   margin-top: 20px;
   color: #ffffff;
   font-style: inherit;
-  line-height: 1.71;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .address {
-    margin-left: 76px;
-  }
+  line-height: 1.72;
 }
 
 .address__contact {
@@ -955,7 +958,8 @@ body.modal-open {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .social-container {
-    margin-left: 165px;
+    margin-left: auto;
+    margin-right: 74px;
     padding-top: 5px;
     text-align: center;
   }
@@ -1011,7 +1015,7 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .subscription {
     margin-top: 12px;
-    margin-left: 93px;
+    margin-left: 90px;
   }
 }
 
@@ -1211,6 +1215,10 @@ body.modal-open {
   position: absolute;
   left: 0;
   bottom: calc(100% + 4px);
+  font-size: 12px;
+  color: #757575;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
 }
 
 .form-list__input {
@@ -1248,6 +1256,10 @@ body.modal-open {
 .textarea__lable {
   display: block;
   margin-bottom: 4px;
+  font-size: 12px;
+  color: #757575;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
 }
 
 .textarea__comments {
@@ -1290,11 +1302,16 @@ body.modal-open {
   display: inline-block;
   width: 16px;
   height: 15px;
-  margin-left: 14px;
   margin-right: 8px;
   border: 2px solid #212121;
   border-radius: 2px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox__icon {
+    margin-left: 14px;
+  }
 }
 
 .checkbox__input:checked + .checkbox__icon {
@@ -1310,7 +1327,7 @@ body.modal-open {
 }
 
 .checkbox__label {
-  margin-right: 8px;
+  color: #757575;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1328,6 +1345,7 @@ body.modal-open {
 
 .checkbox__link {
   color: #2196f3;
+  margin-left: 3px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1455,6 +1473,7 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .card-set__item {
     margin-bottom: 30px;
+    border: 1px solid #eeeeee;
   }
 }
 
